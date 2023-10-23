@@ -5,3 +5,16 @@
 html {
     scroll-behavior: smooth;
 }
+.dropdown-profile{
+    position: absolute;
+    top: 5rem;
+    right: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #2A2A2A;
+    color:white;
+    font-size: 15px;
+    font-weight: 400;
+    transition: .2s;
+    width: 200px;
+  }

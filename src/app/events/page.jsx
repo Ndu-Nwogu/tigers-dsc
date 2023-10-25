@@ -14,7 +14,7 @@ export default function page(){
                 <Calendar/>
             </div>
             <div className=" lg:hidden md:hidden h-[70vh] p-5">
-                <div className=" border rounded-xl border-[#5d5c5c] p-5 mt-5">
+                <div className=" border rounded-xl border-[#5d5c5c] p-5 mt-5 mb-5">
                     <div className=" flex items-center p-5 justify-center">
                         <Image src={oracleEvent} height={10} width={200}/>
                     </div>

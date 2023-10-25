@@ -120,7 +120,7 @@ export default function ContactUs(){
         </div>
         </div>
         {/* smaller devices */}
-        <div id="contact-uss" className=" items-center justify-center lg:hidden md:hidden gap-28 mb-10">
+        <div id="contact-uss" className=" items-center justify-center lg:hidden md:hidden gap-28">
             <div className=" block justify-center items-center p-4 ">
                 <h1 className=" text-[#E36230] text-2xl font-semibold flex justify-center items-center mb-4">Contact Us</h1>
                 <p className=" text-center">Have a question or interested in sponsoring us?<br/> Send us a message here or through our social media.</p>

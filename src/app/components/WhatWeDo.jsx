@@ -3,7 +3,7 @@ export default function WhatWeDo(){
         <div>
         {/* larger devices */}
             <div className="lg:block md:block hidden mb-14">
-                <h4 className="  text-[#E36230] text-3xl font-medium flex justify-center items-center mb-12">WHAT WE DO</h4>
+                <h4 className="  text-[#E36230] text-4xl font-bold flex justify-center items-center mb-12">WHAT WE DO</h4>
                 <div className="flex justify-center items-center">
                     <div className=" grid grid-cols-2 gap-20 p-8">
                         <div className=" bg-[#2A2A2A] w-[400px] h-[200px] rounded-xl p-5 items-center block justify-center">

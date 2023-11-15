@@ -13,7 +13,7 @@ export default function ContactUs(){
   return (
     <div>
     {/* larger devices */}
-        <div id="contact-us" className=" items-center justify-center lg:flex md:flex hidden gap-28 h-[88vh]">
+        <div id="contact-us" className=" items-center justify-center lg:flex md:flex hidden gap-28 h-[85vh]">
             <div className="h-[350px]">
                 <h1 className=" text-[#E36230] text-5xl font-medium mb-4">Contact Us</h1>
                 <p className=" ">Have a question or interested in sponsoring us?<br/> Send us a message here or through our social media.</p>

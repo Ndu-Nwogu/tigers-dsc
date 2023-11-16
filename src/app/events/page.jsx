@@ -1,9 +1,6 @@
-import react from "react"
 import Calendar from "./Calendar"
-import Link from "next/link"
 import Image from "next/image"
-import oracleEvent from "./oracleevent.jpeg"
-import googleevent from "./googleevent.jpg"
+import ge from "./googleevent.jpg"
 
 export default function page(){
     return(
@@ -17,7 +14,7 @@ export default function page(){
             <div className=" lg:hidden md:hidden h-[70vh] p-5">
                 <div className=" border rounded-xl border-[#5d5c5c] p-5 mt-5 mb-5">
                     <div className=" flex items-center p-5 justify-center">
-                        <Image src={googleevent} height={10} width={200} className=" rounded"/>
+                        <Image src={ge} height={10} width={200} className=" rounded"/>
                     </div>
                     <div>
                         <p className=" text-center mb-5"> We are thrilled to be having the Google team join us on outr next meeting. Look forward to seeing you all there.</p>

@@ -1,6 +1,6 @@
 import Calendar from "./Calendar"
 import Image from "next/image"
-import ge from "./googleevent.jpg"
+import ge from "./googleevent.JPG"
 
 export default function page(){
     return(

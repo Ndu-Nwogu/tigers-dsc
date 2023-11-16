@@ -26,6 +26,13 @@ html {
     height: 500px;
     overflow: hidden;
   }
+  .slideshow-container-small{
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 250px;
+    
+  }
   .slide {
     position: absolute;
     top: 0;

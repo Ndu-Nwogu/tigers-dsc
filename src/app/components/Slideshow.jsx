@@ -46,7 +46,10 @@ function Slideshow() {
   }, [nextIndex]);
 
   return (
-    <div className="slideshow-container">
+
+    <div>
+    {/* larger devices */}
+    <div className="slideshow-container lg:block md:block hidden">
       <div className="slide" key={currentIndex}>
         <Image
           src={images[currentIndex]}
@@ -64,9 +67,28 @@ function Slideshow() {
           priority={true}
         />
       </div>
-      <style jsx global>{`
-        
-      `}</style>
+    </div>
+
+    {/* smaller devices */}
+    <div className="slideshow-container-small lg:hidden md:hidden block">
+      <div className="slide" key={currentIndex}>
+        <Image
+          src={images[currentIndex]}
+          alt="Slideshow image"
+          
+          priority={true}
+        />
+      </div>
+      <div className="slide next" key={nextIndex}>
+        <Image
+          src={images[nextIndex]}
+          alt="Slideshow image"
+          width={500}
+          height={500}
+          priority={true}
+        />
+      </div>
+    </div>
     </div>
   );
 }

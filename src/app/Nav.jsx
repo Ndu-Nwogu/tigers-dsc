@@ -1,11 +1,34 @@
 'use client'
 import React from "react";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link"
 import MobileMenu from "./components/MobileMenu"
 
-export default function Nav(){
+const Nav = ()=> {
   const [openProfile, setOpenProfile] = useState(false);
+  const menuRef = useRef(); // Ref for the menu
+
+  // Toggle menu function
+  const toggleMenu = () => setOpenProfile(prev => !prev);
+
+  // Function to handle click outside
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      console.log("Clicked outside: Closing menu"); // Debugging log
+      setOpenProfile(false);
+    }
+  };
+
+  useEffect(() => {
+    // Only attach the event listener if the menu is open
+    if (openProfile) {
+      document.addEventListener("click", handleClickOutside);
+    }
+    return () => {
+      // Cleanup the event listener
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [openProfile]);
 
     return(
         
@@ -75,8 +98,8 @@ export default function Nav(){
          <a href="/./#contact-us">Contact Us</a>
           <a href="https://docs.google.com/forms/d/1RiQxIEpCmPfWos_uy7Mmc8A_N-b2RETJxAvj0w5AdXM/viewform?edit_requested=true" target="_blank" className=' h-[50px] w-[80px] bg-[#E36230] rounded-md flex items-center justify-center '>Join Us</a>
         </div>
-        <div className=" lg:hidden md:hidden sm:flex">
-          <button  onClick={()=> setOpenProfile((prev)=> !prev)}>
+        <div className=" lg:hidden md:hidden sm:flex" ref={menuRef}>
+          <button  onClick={toggleMenu}>
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 18 15" fill="none">
               <rect y="6" width="18" height="3" rx="1.5" fill="white"/>
               <rect width="12" height="3" rx="1.5" fill="white"/>
@@ -90,3 +113,5 @@ export default function Nav(){
         
     )
 }
+
+export default Nav;

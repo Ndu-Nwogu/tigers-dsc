@@ -22,7 +22,7 @@ export default function AboutUs(){
             <div className="  lg:hidden md:hidden p-5 grid items-center justify-center mb-16  ">
                 <h4 className="  text-[#E36230] text-xl font-semibold flex justify-center items-center mb-8">ABOUT US</h4>
                 <div className=" p-1 justify-center items-center grid gap-8">
-                    <Image src={aboutusImage}  className=" rounded-sm h-[25vh] "/>
+                    <Image src={aboutus}  className=" rounded-sm h-[25vh] "/>
                     <p className="text-center text-[15px]">
                     The Texas Southern University Data Science Club is a student-run organization
                     dedicated to fostering a diverse community of learners. Our club stands as a bridge that

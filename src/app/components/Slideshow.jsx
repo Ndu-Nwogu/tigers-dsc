@@ -10,7 +10,7 @@ import s1 from "./images/s1.jpeg"
 import s2 from "./images/s2.jpeg"
 import s3 from "./images/s3.jpeg"
 import s4 from "./images/s4.jpeg"
-import s5 from "./images/s5.jpeg"
+import s5 from "./images/aboutus.jpeg"
 import s6 from "./images/s6.jpeg"
 import s7 from "./images/s7.jpeg"
 
@@ -49,7 +49,7 @@ function Slideshow() {
 
     <div>
     {/* larger devices */}
-    <div className="slideshow-container lg:block md:block hidden">
+    <div className="slideshow-container lg:block md:block hidden ">
       <div className="slide" key={currentIndex}>
         <Image
           src={images[currentIndex]}
@@ -58,13 +58,14 @@ function Slideshow() {
           priority={true}
         />
       </div>
-      <div className="slide next" key={nextIndex}>
+      <div className="slide next rounded-md" key={nextIndex}>
         <Image
           src={images[nextIndex]}
           alt="Slideshow image"
           width={500}
           height={500}
           priority={true}
+          className='rounded-md'
         />
       </div>
     </div>

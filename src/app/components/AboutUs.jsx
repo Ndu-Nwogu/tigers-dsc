@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
-import aboutus from '../../../aboutus.svg'
 import aboutusImage from "./aboutusImage.jpeg"
+import aboutus from "../components/images/aboutus.jpeg"
 export default function AboutUs(){
     return(
         <div>
@@ -9,7 +9,7 @@ export default function AboutUs(){
             <div className=" lg:block md:block hidden mb-16 ">
                 <h4 className="  text-[#E36230] text-4xl font-bold flex justify-center items-center mb-12">ABOUT US</h4>
                 <div className=" flex justify-center items-center gap-14">
-                    <Image src={aboutusImage} className=" h-[50vh] w-[80vh]"/>
+                    <Image src={aboutus} className=" h-[50vh] w-[80vh]"/>
                     <p className=" text-center w-[550px] text-lg">
                     The Texas Southern University Data Science Club is a student-run organization
                     dedicated to fostering a diverse community of learners. Our club stands as a bridge that

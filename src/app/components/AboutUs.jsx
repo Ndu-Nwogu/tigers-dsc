@@ -24,7 +24,10 @@ export default function AboutUs(){
                 <div className=" p-1 justify-center items-center grid gap-8">
                     <Image src={aboutusImage}  className=" rounded-sm h-[25vh] "/>
                     <p className="text-center text-[15px]">
-                        The Data science club at Texas Southern University is student-run organization which is filled with a bunch of big brained people like myself as well as other eager-minded students who are always willing to learn and share their ideas as a community. 
+                    The Texas Southern University Data Science Club is a student-run organization
+                    dedicated to fostering a diverse community of learners. Our club stands as a bridge that
+                    connects aspirations with resources, enabling each student to evolve into a skilled practitioner in
+                    the world of data science.
                     </p>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import './globals.css'
 import Link from 'next/link'
-import { Inter } from 'next/font/google'
+import { Inter, Roboto } from 'next/font/google'
 import Nav from './Nav'
 import Foot from './Foot'
 

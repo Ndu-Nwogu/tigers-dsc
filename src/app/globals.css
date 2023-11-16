@@ -8,16 +8,16 @@ html {
 }
 .dropdown-profile{
     position: absolute;
-    top: 6rem;
+    top: 5.8rem;
     right: 1rem;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #2A2A2A;
     color:white;
     font-size: 15px;
     font-weight: 400;
     transition: .2s;
-    width: 200px;
+    width: 170px;
   }
 
   .slideshow-container {
